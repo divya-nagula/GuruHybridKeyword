@@ -1,0 +1,162 @@
+#Login Objects
+txtbx_UserID = .//[@name='uid']/input
+txtbx_Password = .//[@name='password']/input
+btn_Login = .//[@value='LOGIN']/input
+btn_Reset = .//[@value='RESET']/input
+accessLink_Here = .//[@href='http://demo.guru99.com'][contains(text(),'here')]/a
+
+#Manager_Signup Objects
+txtbx_EmailID = .//[@name='emailid']/input
+btn_Submit = .//[@value = 'Submit']/input
+value_UserID = ./html/body/table/tbody/tr[4]/td[2]
+value_Password = ./html/body/table/tbody/tr[5]/td[2]
+
+#Manager_Home Objects
+nav_ManagerHome = .//[@href='Managerhomepage.php'][contains(text(),'Manager')]/a
+nav_NewCustomer = .//[@href='addcustomerpage.php'][contains(text(),'New Customer')]/a
+nav_EditCustomer = .//[@href='EditCustomer.php'][contains(text(),'Edit Customer')]/a
+nav_DeleteCustomer = .//[@href='DeleteCustomerInput.php'][contains(text(),'Delete Customer')]/a
+nav_NewAccount = .//[@href='addAccount.php'][contains(text(),'New Account')]/a
+nav_EditAccount = .//[@href='editAccount.php'][contains(text(),'Edit Account')]/a
+nav_DeleteAccount = .//[@href='deleteAccountInput.php'][contains(text(),'Delete Account')]/a
+nav_Deposit = .//[@href='DepositInput.php'][contains(text(),'Deposit')]/a
+nav_Withdrawal = .//[@href='WithdrawalInput.php'][contains(text(),'Withdrawal')]/a
+nav_FundTransfer = .//[@href='FundTransInput.php'][contains(text(),'Fund Transfer')]/a
+nav_ChangePassword = .//[@href='PasswordInput.php'][contains(text(),'Change Password')]/a
+nav_BalanceEnquiry = .//[@href='BalEnqInput.php'][contains(text(),'Balance Enquiry')]/a
+nav_MiniStatement = .//[@href='MiniStatementInput.php'][contains(text(),'Mini Statement')]/a
+nav_CustomisedStatement = .//[@href='CustomisedStatementInput.php'][contains(text(),'Customised Statement')]/a
+nav_LogOut = .//[@href='Logout.php'][contains(text(),'Log out')]/a
+
+#Manager_NewCustomer Objects
+txtbx_CustomerName = .//[@name='name']/input
+radio_Gender_Male = .//[@value='m']/input
+radio_Gender_Female = .//[@value='f']/input
+txtbx_DOB = .//[@id='dob']/input
+txtbx_Address = .//[@name='addr']/textarea
+txtbx_City = .//[@name='city']/input
+txtbx_State = .//[@name='state']/input
+txtbx_PIN = .//[@name='pinno']/input
+txtbx_MobileNumber = .//[@name='telephoneno']/input
+txtbx_EmailID = .//[@name='emailid']/input
+txtbx_Password = .//[@name='password']/input
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
+
+#Manager_EditCustomer Objects
+txtbx_CustomerID = .//[@name='cusid']/input
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
+
+#Manager_DeleteCustomer Objects
+txtbx_CustomerID = .//[@name='cusid']/input
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
+
+#Manager_NewAccount Objects
+txtbx_CustomerID = .//[@name='cusid']/input
+select_AccountType = .//[@name='selaccount']/select
+txtbx_InitialDeposit = .//[@name='inideposit']/input
+btn_Submit = .//[@value='submit']/input
+btn_Reset = .//[@value='reset']/input
+
+#Manager_EditAccount Objects
+txtbx_AccountNo = .//[@name='accountno']/input
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
+
+#Manager_DeleteAccount Objects
+txtbx_AccountNo = .//[@name='accountno']/input
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
+
+#Manager_Deposit Objects
+txtbx_AccountNo = .//[@name='accountno']/input
+txtbx_Amount = .//[@name='ammount']/input 
+txtbx_Description = .//[@name='desc']/input
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
+
+#Manager_Withdrawal Objects
+txtbx_AccountNo = .//[@name='accountno']/input
+txtbx_Amount = .//[@name='ammount']/input 
+txtbx_Description = .//[@name='desc']/input
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
+
+#Manager_FundTransfer Objects
+txtbx_PayerAccountNo = .//[@name='payersaccount']/input
+txtbx_PayeeAccountNo = .//[@name='payeeaccount']/input
+txtbx_Amount = .//[@name='ammount']/input
+txtbx_Description = .//[@name='desc']/input
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
+
+#Manager_ChangePassword Objects
+txtbx_OldPassword = .//[@name='oldpassword']/input
+txtbx_NewPassword = .//[@name='newpassword']/input
+txtbx_ConfirmPassword = .//[@name='confirmpassword']/input
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
+
+#Manager_BalanceEnquiry Objects
+txtbx_AccountNo = .//[@name='accountno']/input
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
+
+#Manager_MiniStatement Objects
+txtbx_AccountNo = .//[@name='accountno']/input
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
+
+#Manager_CustomisedStatement Objects
+txtbx_AccountNo = .//[@name='accountno']/input
+txtbx_FromDate = .//[@name='fdate']/input
+txtbx_ToDate = .//[@name='tdate']/input
+txtbx_MinTransactionValue = .//[@name='amountlowerlimit']/input
+txtbx_NoOfTransactions = .//[@name='numtransaction']/input
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
+
+#Customer_Home
+nav_CustomerHome = .//[@href='Customerhomepage.php'][contains(text(),'Customer')]/a
+nav_BalanceEnquiry = .//[@href='BalEnqInput.php'][contains(text(),'Balance Enquiry')]/a
+nav_FundTransfer = .//[@href='customerfundinput.php'][contains(text(),'Fund Transfer')]/a
+nav_ChangePassword = .//[@href='PasswordInput.php'][contains(text(),'Changepassword')]/a
+nav_MiniStatement = .//[@href='MiniStatementInput.php'][contains(text(),'Mini Statement')]/a
+nav_CustomisedStatement = .//[@href='CustomisedStatementInput.php'][contains(text(),'Customised Statement')]/a
+nav_LogOut = .//[@href='Logout.php'][contains(text(),'Log out')]/a
+
+#Customer_BalanceEnquiry
+select_AccountNo = .//[@name='accountno']/select
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
+
+#Customer_FundTransfer
+txtbx_PayerAccountNo = .//[@name='payersaccount']/input
+txtbx_PayeeAccountNo = .//[@name='payeeaccount']/input
+txtbx_Amount = .//[@name='ammount']/input
+txtbx_Description = .//[@name='desc']/input
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
+
+#Customer_ChangePassword
+txtbx_OldPassword = .//[@name='oldpassword']/input
+txtbx_NewPassword = .//[@name='newpassword']/input
+txtbx_ConfirmPassword = .//[@name='confirmpassword']/input
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
+
+#Customer_MiniStatement
+txtbx_AccountNo = .//[@name='accountno']/input
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
+
+#Customer_CustomisedStatement
+txtbx_AccountNo = .//[@name='accountno']/input
+txtbx_FromDate = .//[@name='fdate']/input
+txtbx_ToDate = .//[@name='tdate']/input
+txtbx_MinTransactionValue = .//[@name='amountlowerlimit']/input
+txtbx_NoOfTransactions = .//[@name='numtransaction']/input
+btn_Submit = .//[@value='Submit']/input
+btn_Reset = .//[@value='Reset']/input
