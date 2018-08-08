@@ -28,7 +28,7 @@ public class TestCaseEngine {
 	
 	public TestCaseEngine() throws NoSuchMethodException, SecurityException{
 		actionKeywords = new ActionKeywords();
-		method = actionKeywords.getClass().getMethods();	
+		method = actionKeywords.getClass().getMethods();
 		
 	}
 
